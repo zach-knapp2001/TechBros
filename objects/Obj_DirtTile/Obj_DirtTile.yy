@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "Obj_DirtTile",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -11,7 +11,10 @@
     "name": "Tiles",
     "path": "folders/Objects/Tiles.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "ParentTile",
+    "path": "objects/ParentTile/ParentTile.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
