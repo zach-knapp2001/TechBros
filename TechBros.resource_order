@@ -19,6 +19,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"DirtTile","order":1,"path":"sprites/DirtTile/DirtTile.yy",},
+    {"name":"Obj_DirtTile","order":2,"path":"objects/Obj_DirtTile/Obj_DirtTile.yy",},
     {"name":"ParentTile","order":1,"path":"objects/ParentTile/ParentTile.yy",},
   ],
 }
