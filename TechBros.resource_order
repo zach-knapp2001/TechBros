@@ -16,11 +16,16 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Enemies","order":2,"path":"folders/Objects/Enemies.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"Obj_SpawnTile","order":4,"path":"objects/Obj_SpawnTile/Obj_SpawnTile.yy",},
     {"name":"Sprite3","order":2,"path":"sprites/Sprite3/Sprite3.yy",},
     {"name":"DirtTile","order":1,"path":"sprites/DirtTile/DirtTile.yy",},
     {"name":"Obj_DirtTile","order":2,"path":"objects/Obj_DirtTile/Obj_DirtTile.yy",},
     {"name":"ParentTile","order":1,"path":"objects/ParentTile/ParentTile.yy",},
+    {"name":"Spr_EndTile","order":3,"path":"sprites/Spr_EndTile/Spr_EndTile.yy",},
+    {"name":"Obj_GoalTile","order":3,"path":"objects/Obj_GoalTile/Obj_GoalTile.yy",},
+    {"name":"Spr_SpawnTile","order":4,"path":"sprites/Spr_SpawnTile/Spr_SpawnTile.yy",},
   ],
 }

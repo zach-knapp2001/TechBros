@@ -27,6 +27,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemies","folderPath":"folders/Objects/Enemies.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -35,6 +36,7 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
+    {"id":{"name":"Obj_SpawnTile","path":"objects/Obj_SpawnTile/Obj_SpawnTile.yy",},},
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
     {"id":{"name":"DirtTile","path":"sprites/DirtTile/DirtTile.yy",},},
@@ -42,7 +44,10 @@
     {"id":{"name":"BasicTile","path":"objects/BasicTile/BasicTile.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
     {"id":{"name":"ParentTile","path":"objects/ParentTile/ParentTile.yy",},},
+    {"id":{"name":"Spr_EndTile","path":"sprites/Spr_EndTile/Spr_EndTile.yy",},},
+    {"id":{"name":"Obj_GoalTile","path":"objects/Obj_GoalTile/Obj_GoalTile.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
+    {"id":{"name":"Spr_SpawnTile","path":"sprites/Spr_SpawnTile/Spr_SpawnTile.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
