@@ -5,6 +5,7 @@
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
+    {"name":"Enemies","order":2,"path":"folders/Objects/Enemies.yy",},
     {"name":"Tiles","order":1,"path":"folders/Objects/Tiles.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
@@ -18,9 +19,13 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"Obj_SpawnTile","order":4,"path":"objects/Obj_SpawnTile/Obj_SpawnTile.yy",},
     {"name":"Sprite3","order":2,"path":"sprites/Sprite3/Sprite3.yy",},
     {"name":"DirtTile","order":1,"path":"sprites/DirtTile/DirtTile.yy",},
     {"name":"Obj_DirtTile","order":2,"path":"objects/Obj_DirtTile/Obj_DirtTile.yy",},
     {"name":"ParentTile","order":1,"path":"objects/ParentTile/ParentTile.yy",},
+    {"name":"Spr_EndTile","order":3,"path":"sprites/Spr_EndTile/Spr_EndTile.yy",},
+    {"name":"Obj_GoalTile","order":3,"path":"objects/Obj_GoalTile/Obj_GoalTile.yy",},
+    {"name":"Spr_SpawnTile","order":4,"path":"sprites/Spr_SpawnTile/Spr_SpawnTile.yy",},
   ],
 }
