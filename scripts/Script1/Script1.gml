@@ -61,3 +61,4 @@ function rand_choice(positions) {
 }
 
 // hello!!!!!!!!
+// my second comment
