@@ -59,3 +59,6 @@ function rand_choice(positions) {
 	var choice = irandom(array_length(positions) - 1)
 	return positions[choice];
 }
+
+// hello!!!!!!!!
+// my second comment
