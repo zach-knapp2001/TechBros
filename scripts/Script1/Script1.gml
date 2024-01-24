@@ -33,7 +33,7 @@ function find_adj_tiles(tile){
 		curr_adj_tile = adj_tiles[i];
 		// show_debug_message(string(curr_adj_tile));
 		if (curr_adj_tile[0] < 0 || curr_adj_tile[1] < 0 || curr_adj_tile[1] > global.board_size[1] - 1 || curr_adj_tile[0] > global.board_size[0] - 1) {
-		 	adj_tiles[i] = pointer_null;
+		 	adj_tiles[i] = -1;
 		}
 	}
 	// show_debug_message(string(adj_tiles));
@@ -62,3 +62,84 @@ function rand_choice(positions) {
 
 // hello!!!!!!!!
 // my second comment
+
+/// Chooses the next move for an enemy to make based on its position in the grid (Djikstra's Algorithm)
+// @param position is the position of the enemy on the grid
+// @returns a full path on the grid to the goal
+function nextMove(position) {
+	var move = [];
+	// show_debug_message(array_contains(find_adj_tiles(global.tiles[position[1]][position[0]]), global.goalTile));
+	// if (!array_contains(find_adj_tiles(global.tiles[position[1]][position[0]]), global.goalTile)) {
+		var prioQueue = ds_priority_create();
+		ds_priority_add(prioQueue, [position], 1);
+		var pathList = [];
+		var visitedList = [];
+		
+		//show_debug_message(pathList[array_length(pathList)-1] == []);
+		//show_debug_message(array_length(pathList));
+
+		while (ds_priority_find_min(prioQueue) != undefined) {
+			var currPath = ds_priority_find_min(prioQueue)
+			//show_debug_message(currPath);
+			var currTile = currPath[array_length(currPath)-1];
+			show_debug_message("Current tile:" + string(currTile));
+			var currPrio = ds_priority_find_priority(prioQueue, currPath);
+			//show_debug_message(currPrio);
+			ds_priority_delete_min(prioQueue);
+			
+			var visited = false;
+			if (array_length(visitedList) > 0) {
+				for (j = 0; j < array_length(visitedList); j++) {
+					var iter = visitedList[j];
+					show_debug_message("iteration of visited: " + string(iter));
+					visited = array_equals(iter, currTile) ? true : visited;
+				}
+				show_debug_message("Visited bool: " + string(visited));
+			}
+			
+			if (visited) {
+				continue
+			}
+			
+			array_push(pathList, currPath);
+			array_push(visitedList, currTile);
+			
+			if (array_equals(currTile, global.goalTile.position)) {
+				move = currPath;
+			}
+
+			var adjTiles = find_adj_tiles(global.tiles[currTile[1]][currTile[0]]);
+			show_debug_message("Adjacent Tiles: " + string(adjTiles));
+			for (i = 0; i < 6; i++) {
+				var targetTile = adjTiles[i];
+				show_debug_message("Target tile: " + string(targetTile));
+				show_debug_message("visited list: " + string(visitedList));
+				
+				/*
+				var visited = false;
+				for (j = 0; j < array_length(visitedList); j++) {
+					visited = array_equals(visitedList[j], targetTile) ? true : visited;
+				}
+				show_debug_message("Visited bool: " + string(visited));
+				*/
+				
+				if (targetTile != -1) {
+					var visited = false;
+					for (j = 0; j < array_length(visitedList); j++) {
+						visited = array_equals(visitedList[j], targetTile) ? true : visited;
+					}
+					show_debug_message("Visited bool: " + string(visited));
+				
+					if (!visited) {
+						var addedPath = array_concat(currPath, [targetTile]);
+						ds_priority_add(prioQueue, addedPath, currPrio + global.tiles[targetTile[1]][targetTile[0]].tileHP + 10);
+						
+					}
+				}
+				show_debug_message(ds_priority_size(prioQueue));
+			}
+		}
+	// }
+	
+	return move;
+}
