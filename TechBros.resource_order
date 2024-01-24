@@ -7,6 +7,7 @@
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
     {"name":"Enemies","order":2,"path":"folders/Objects/Enemies.yy",},
     {"name":"Tiles","order":1,"path":"folders/Objects/Tiles.yy",},
+    {"name":"Towers","order":3,"path":"folders/Objects/Towers.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
@@ -19,8 +20,8 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
-
-
+    {"name":"Obj_gTower1","order":1,"path":"objects/Obj_gTower1/Obj_gTower1.yy",},
+    {"name":"bug_attack","order":13,"path":"sprites/bug_attack/bug_attack.yy",},
     {"name":"obj_button_parent","order":3,"path":"objects/obj_button_parent/obj_button_parent.yy",},
     {"name":"obj_button_options","order":5,"path":"objects/obj_button_options/obj_button_options.yy",},
     {"name":"Sprite7","order":17,"path":"sprites/Sprite7/Sprite7.yy",},
@@ -33,6 +34,7 @@
     {"name":"Obj_DirtTile","order":2,"path":"objects/Obj_DirtTile/Obj_DirtTile.yy",},
     {"name":"play_btn","order":5,"path":"sprites/play_btn/play_btn.yy",},
     {"name":"ParentTile","order":1,"path":"objects/ParentTile/ParentTile.yy",},
+    {"name":"bugA_attack","order":12,"path":"sprites/bugA_attack/bugA_attack.yy",},
     {"name":"obj_controls","order":7,"path":"objects/obj_controls/obj_controls.yy",},
     {"name":"obj_button_quit","order":6,"path":"objects/obj_button_quit/obj_button_quit.yy",},
     {"name":"title_screen","order":1,"path":"rooms/title_screen/title_screen.yy",},
@@ -43,8 +45,10 @@
     {"name":"Spr_EndTile","order":2,"path":"sprites/Spr_EndTile/Spr_EndTile.yy",},
     {"name":"bugA","order":4,"path":"sprites/bugA/bugA.yy",},
     {"name":"Obj_GoalTile","order":3,"path":"objects/Obj_GoalTile/Obj_GoalTile.yy",},
-    {"name":"Sprite6","order":16,"path":"sprites/Sprite6/Sprite6.yy",},
+    {"name":"ParentEnemy","order":1,"path":"objects/ParentEnemy/ParentEnemy.yy",},
+    {"name":"bugA_idle","order":11,"path":"sprites/bugA_idle/bugA_idle.yy",},
     {"name":"hard_block","order":10,"path":"sprites/hard_block/hard_block.yy",},
     {"name":"Spr_SpawnTile","order":3,"path":"sprites/Spr_SpawnTile/Spr_SpawnTile.yy",},
+    {"name":"Obj_bug_attack","order":2,"path":"objects/Obj_bug_attack/Obj_bug_attack.yy",},
   ],
 }

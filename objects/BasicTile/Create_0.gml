@@ -59,3 +59,4 @@ var enemySpawnTile = global.tiles[global.enemySpawns[0][1]][global.enemySpawns[0
 enemySpawnTile.change_to = Obj_SpawnTile;
 // enemySpawnTile.position = firstEnemySpawn;
 // enemySpawnTile.adj_tiles = find_adj_tiles(enemySpawnTile);
+
