@@ -22,10 +22,8 @@
   "ResourceOrderSettings": [
     {"name":"Obj_gTower1","order":1,"path":"objects/Obj_gTower1/Obj_gTower1.yy",},
     {"name":"bug_attack","order":13,"path":"sprites/bug_attack/bug_attack.yy",},
-    {"name":"Sprite7","order":17,"path":"sprites/Sprite7/Sprite7.yy",},
     {"name":"end_block","order":6,"path":"sprites/end_block/end_block.yy",},
     {"name":"Obj_SpawnTile","order":4,"path":"objects/Obj_SpawnTile/Obj_SpawnTile.yy",},
-    {"name":"Sprite17","order":18,"path":"sprites/Sprite17/Sprite17.yy",},
     {"name":"gTower1","order":5,"path":"sprites/gTower1/gTower1.yy",},
     {"name":"start_block","order":7,"path":"sprites/start_block/start_block.yy",},
     {"name":"gTower1_attack","order":8,"path":"sprites/gTower1_attack/gTower1_attack.yy",},
@@ -39,7 +37,6 @@
     {"name":"Obj_GoalTile","order":3,"path":"objects/Obj_GoalTile/Obj_GoalTile.yy",},
     {"name":"ParentEnemy","order":1,"path":"objects/ParentEnemy/ParentEnemy.yy",},
     {"name":"bugA_idle","order":11,"path":"sprites/bugA_idle/bugA_idle.yy",},
-    {"name":"Sprite6","order":16,"path":"sprites/Sprite6/Sprite6.yy",},
     {"name":"hard_block","order":10,"path":"sprites/hard_block/hard_block.yy",},
     {"name":"Spr_SpawnTile","order":3,"path":"sprites/Spr_SpawnTile/Spr_SpawnTile.yy",},
     {"name":"Obj_bug_attack","order":2,"path":"objects/Obj_bug_attack/Obj_bug_attack.yy",},

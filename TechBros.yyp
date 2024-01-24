@@ -39,10 +39,8 @@
   "resources": [
     {"id":{"name":"Obj_gTower1","path":"objects/Obj_gTower1/Obj_gTower1.yy",},},
     {"id":{"name":"bug_attack","path":"sprites/bug_attack/bug_attack.yy",},},
-    {"id":{"name":"Sprite7","path":"sprites/Sprite7/Sprite7.yy",},},
     {"id":{"name":"end_block","path":"sprites/end_block/end_block.yy",},},
     {"id":{"name":"Obj_SpawnTile","path":"objects/Obj_SpawnTile/Obj_SpawnTile.yy",},},
-    {"id":{"name":"Sprite17","path":"sprites/Sprite17/Sprite17.yy",},},
     {"id":{"name":"gTower1","path":"sprites/gTower1/gTower1.yy",},},
     {"id":{"name":"start_block","path":"sprites/start_block/start_block.yy",},},
     {"id":{"name":"ParentTower","path":"objects/ParentTower/ParentTower.yy",},},
@@ -60,7 +58,6 @@
     {"id":{"name":"ParentEnemy","path":"objects/ParentEnemy/ParentEnemy.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"bugA_idle","path":"sprites/bugA_idle/bugA_idle.yy",},},
-    {"id":{"name":"Sprite6","path":"sprites/Sprite6/Sprite6.yy",},},
     {"id":{"name":"Obj_bugA","path":"objects/Obj_bugA/Obj_bugA.yy",},},
     {"id":{"name":"hard_block","path":"sprites/hard_block/hard_block.yy",},},
     {"id":{"name":"Spr_SpawnTile","path":"sprites/Spr_SpawnTile/Spr_SpawnTile.yy",},},
