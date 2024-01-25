@@ -8,3 +8,6 @@ damageTaken = 0;
 
 maxHP = 1;
 tileHP = maxHP;
+
+pathCourse = [];
+path = emptyPath;

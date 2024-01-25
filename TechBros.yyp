@@ -71,6 +71,7 @@
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"Obj_gTower1_attack","path":"objects/Obj_gTower1_attack/Obj_gTower1_attack.yy",},},
     {"id":{"name":"PLAY","path":"sprites/PLAY/PLAY.yy",},},
+    {"id":{"name":"emptyPath","path":"paths/emptyPath/emptyPath.yy",},},
     {"id":{"name":"tile_top","path":"sprites/tile_top/tile_top.yy",},},
     {"id":{"name":"Obj_gIcon1","path":"objects/Obj_gIcon1/Obj_gIcon1.yy",},},
     {"id":{"name":"Obj_TileBack","path":"objects/Obj_TileBack/Obj_TileBack.yy",},},

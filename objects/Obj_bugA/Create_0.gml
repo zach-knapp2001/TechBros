@@ -3,7 +3,10 @@
 
 event_inherited();
 
-maxSpeed = 5;
+maxSpeed = 2;
+
+damage = 10;
+toBeVisible = true;
 
 attackAnim = instance_create_layer(Obj_bugA.x, Obj_bugA.y, "Instances_1", Obj_bug_attack);
 attackAnimID = attackAnim.id;

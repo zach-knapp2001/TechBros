@@ -3,3 +3,5 @@
 
 attack_speed = 1;
 maxSpeed = 0;
+path = emptyPath;
+damage = 1;
