@@ -26,5 +26,7 @@
     {"name":"obj_button_play","order":2,"path":"objects/obj_button_play/obj_button_play.yy",},
     {"name":"Spr_SpawnTile","order":1,"path":"sprites/Spr_SpawnTile/Spr_SpawnTile.yy",},
     {"name":"tile_select","order":5,"path":"objects/tile_select/tile_select.yy",},
+    {"name":"ObstacleParentTile","order":1,"path":"objects/ObstacleParentTile/ObstacleParentTile.yy",},
+    {"name":"Obj_SolidTile","order":2,"path":"objects/Obj_SolidTile/Obj_SolidTile.yy",},
   ],
 }
