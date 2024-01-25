@@ -9,7 +9,7 @@ event_inherited();
 /// @DnDArgument : "obj" "obj_controls"
 /// @DnDSaveInfo : "obj" "obj_controls"
 var l46154BBA_0 = false;
-l46154BBA_0 = instance_exists(obj_controls);
+l46154BBA_0 = instance_exists(Obj_controls);
 if(l46154BBA_0)
 {
 	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
@@ -17,7 +17,7 @@ if(l46154BBA_0)
 	/// @DnDHash : 15EE7468
 	/// @DnDApplyTo : obj_controls
 	/// @DnDParent : 46154BBA
-	with(obj_controls) instance_destroy();
+	with(Obj_controls) instance_destroy();
 }
 
 /// @DnDAction : YoYo Games.Common.Else
@@ -35,4 +35,4 @@ else
 /// @DnDArgument : "ypos" "room_height - 100"
 /// @DnDArgument : "objectid" "obj_controls"
 /// @DnDSaveInfo : "objectid" "obj_controls"
-instance_create_layer(room_width / 2, room_height - 100, "Instances", obj_controls);
+instance_create_layer(room_width / 2, room_height - 100, "Instances", Obj_controls);
