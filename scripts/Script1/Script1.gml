@@ -82,7 +82,7 @@ function nextMove(position) {
 			var currPath = ds_priority_find_min(prioQueue)
 			//show_debug_message(currPath);
 			var currTile = currPath[array_length(currPath)-1];
-			show_debug_message("Current tile:" + string(currTile));
+			//show_debug_message("Current tile:" + string(currTile));
 			var currPrio = ds_priority_find_priority(prioQueue, currPath);
 			//show_debug_message(currPrio);
 			ds_priority_delete_min(prioQueue);
@@ -91,14 +91,14 @@ function nextMove(position) {
 			if (array_length(visitedList) > 0) {
 				for (j = 0; j < array_length(visitedList); j++) {
 					var iter = visitedList[j];
-					show_debug_message("iteration of visited: " + string(iter));
+					//show_debug_message("iteration of visited: " + string(iter));
 					visited = array_equals(iter, currTile) ? true : visited;
 				}
-				show_debug_message("Visited bool: " + string(visited));
+				//show_debug_message("Visited bool: " + string(visited));
 			}
 			
 			if (visited) {
-				continue
+				continue;
 			}
 			
 			array_push(pathList, currPath);
@@ -106,14 +106,15 @@ function nextMove(position) {
 			
 			if (array_equals(currTile, global.goalTile.position)) {
 				move = currPath;
+				// return move;
 			}
 
 			var adjTiles = find_adj_tiles(global.tiles[currTile[1]][currTile[0]]);
-			show_debug_message("Adjacent Tiles: " + string(adjTiles));
+			//show_debug_message("Adjacent Tiles: " + string(adjTiles));
 			for (i = 0; i < 6; i++) {
 				var targetTile = adjTiles[i];
-				show_debug_message("Target tile: " + string(targetTile));
-				show_debug_message("visited list: " + string(visitedList));
+				//show_debug_message("Target tile: " + string(targetTile));
+				//show_debug_message("visited list: " + string(visitedList));
 				
 				/*
 				var visited = false;
@@ -128,7 +129,7 @@ function nextMove(position) {
 					for (j = 0; j < array_length(visitedList); j++) {
 						visited = array_equals(visitedList[j], targetTile) ? true : visited;
 					}
-					show_debug_message("Visited bool: " + string(visited));
+					//show_debug_message("Visited bool: " + string(visited));
 				
 					if (!visited) {
 						var addedPath = array_concat(currPath, [targetTile]);
@@ -136,10 +137,9 @@ function nextMove(position) {
 						
 					}
 				}
-				show_debug_message(ds_priority_size(prioQueue));
+				//show_debug_message(ds_priority_size(prioQueue));
 			}
 		}
 	// }
-	
 	return move;
 }

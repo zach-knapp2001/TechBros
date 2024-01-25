@@ -54,11 +54,23 @@ for(var i = 0; i < 4; i++) {
 	array_push(possibleEnemySpawns, [i, 15]);
 }
 var firstEnemySpawn = rand_choice(possibleEnemySpawns);
+show_debug_message(firstEnemySpawn);
 global.enemySpawns = [firstEnemySpawn];
 var enemySpawnTile = global.tiles[global.enemySpawns[0][1]][global.enemySpawns[0][0]];
 enemySpawnTile.change_to = Obj_SpawnTile;
-// enemySpawnTile.position = firstEnemySpawn;
-// enemySpawnTile.adj_tiles = find_adj_tiles(enemySpawnTile);
+//enemySpawnTile.position = firstEnemySpawn;
+//enemySpawnTile.adj_tiles = find_adj_tiles(enemySpawnTile);
+var pathCourse = nextMove(firstEnemySpawn);
+enemySpawnTile.pathCourse = pathCourse;
+show_debug_message("Done pathing");
+var path = path_add();
+for (i = 0; i < array_length(pathCourse); i++) {
+	path_add_point(path, global.tiles[pathCourse[i][1]][pathCourse[i][0]].x, global.tiles[pathCourse[i][1]][pathCourse[i][0]].y, 100);
+}
+path_delete_point(path, path_get_length(path) - 1)
+enemySpawnTile.path = path;
+show_debug_message("Done pathing");
+//global.tiles[global.enemySpawns[0][1]][global.enemySpawns[0][0]] = enemySpawnTile;
 
 
 global.pathLen = path_get_number(test_path);

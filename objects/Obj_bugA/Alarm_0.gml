@@ -2,5 +2,7 @@
 // You can write your code in this editor
 
 // attackingObj.tileHP = 0;
-attackingObj.damageTaken = 100;
-alarm_set(1, 20);
+attackingObj.damageTaken = damage;
+visible = toBeVisible;
+//alarm_set(1, 30);
+
