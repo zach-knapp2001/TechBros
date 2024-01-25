@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "bugA",
-    "path": "sprites/bugA/bugA.yy",
+    "name": "bugA_idle",
+    "path": "sprites/bugA_idle/bugA_idle.yy",
   },
   "spriteMaskId": null,
   "visible": true,
