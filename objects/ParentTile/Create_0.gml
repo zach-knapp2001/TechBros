@@ -11,3 +11,6 @@ tileHP = maxHP;
 
 pathCourse = [];
 path = emptyPath;
+
+interactionTileTop = instance_create_layer(x, y, "TileTops", Obj_TileTop);
+interactionTileTop.relatedTile = id;

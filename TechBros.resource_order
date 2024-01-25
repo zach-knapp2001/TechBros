@@ -9,7 +9,6 @@
     {"name":"Obj_button_parent","order":1,"path":"objects/Obj_button_parent/Obj_button_parent.yy",},
     {"name":"Obj_SpawnTile","order":3,"path":"objects/Obj_SpawnTile/Obj_SpawnTile.yy",},
     {"name":"gTower1","order":6,"path":"sprites/gTower1/gTower1.yy",},
-    {"name":"Sprite3","order":2,"path":"sprites/Sprite3/Sprite3.yy",},
     {"name":"DirtTile","order":3,"path":"sprites/DirtTile/DirtTile.yy",},
     {"name":"ObstacleParentTile","order":1,"path":"objects/ObstacleParentTile/ObstacleParentTile.yy",},
     {"name":"Obj_DirtTile","order":4,"path":"objects/Obj_DirtTile/Obj_DirtTile.yy",},
@@ -31,6 +30,7 @@
     {"name":"Obj_button_play","order":2,"path":"objects/Obj_button_play/Obj_button_play.yy",},
     {"name":"Spr_SpawnTile","order":1,"path":"sprites/Spr_SpawnTile/Spr_SpawnTile.yy",},
     {"name":"tile_select","order":5,"path":"objects/tile_select/tile_select.yy",},
+    {"name":"TileSet2","order":1,"path":"tilesets/TileSet2/TileSet2.yy",},
     {"name":"dirt_tileset","order":12,"path":"sprites/dirt_tileset/dirt_tileset.yy",},
   ],
 }

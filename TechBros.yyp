@@ -83,6 +83,7 @@
     {"id":{"name":"Obj_bugA","path":"objects/Obj_bugA/Obj_bugA.yy",},},
     {"id":{"name":"hard_block","path":"sprites/hard_block/hard_block.yy",},},
     {"id":{"name":"test_path","path":"paths/test_path/test_path.yy",},},
+    {"id":{"name":"TileSet2","path":"tilesets/TileSet2/TileSet2.yy",},},
     {"id":{"name":"dirt_tileset","path":"sprites/dirt_tileset/dirt_tileset.yy",},},
     {"id":{"name":"Obj_bug_attack","path":"objects/Obj_bug_attack/Obj_bug_attack.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
