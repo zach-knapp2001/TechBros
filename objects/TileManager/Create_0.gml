@@ -34,8 +34,8 @@ var possibleGoalTiles = [[1,7],[2,6],[2,8]];
 var goalTilePosition = rand_choice(possibleGoalTiles);
 // var choice = irandom(array_length(possibleGoalTiles) - 1);
 // var goalTilePosition = possibleGoalTiles[choice];
-var goalTile = global.tiles[goalTilePosition[1]][goalTilePosition[0]];
-goalTile.change_to = Obj_GoalTile;
+global.goalTile = global.tiles[goalTilePosition[1]][goalTilePosition[0]];
+global.goalTile.change_to = Obj_GoalTile;
 // goalTile.position = goalTilePosition;
 // goalTile.adj_tiles = find_adj_tiles(goalTile);
 
@@ -60,3 +60,5 @@ enemySpawnTile.change_to = Obj_SpawnTile;
 // enemySpawnTile.position = firstEnemySpawn;
 // enemySpawnTile.adj_tiles = find_adj_tiles(enemySpawnTile);
 
+
+global.pathLen = path_get_number(test_path);

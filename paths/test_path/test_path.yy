@@ -9,7 +9,7 @@
     "path": "folders/Paths.yy",
   },
   "points": [
-    {"speed":100.0,"x":111.0,"y":-2.0,},
+    {"speed":100.0,"x":48.0,"y":8.0,},
     {"speed":100.0,"x":179.9364,"y":7.0,},
   ],
   "precision": 4,

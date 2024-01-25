@@ -1,5 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-attack_speed = 1;
-maxSpeed = 0;
+show_debug_message(string(global.pathLen));

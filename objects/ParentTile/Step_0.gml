@@ -5,3 +5,12 @@ if(change_to != event_object) {
 	instance_change(change_to, false);
 	change_to = event_object;
 }
+
+if(tileHP <= 0){
+	instance_destroy();
+}
+
+if (damageTaken != 0) {
+	tileHP-= damageTaken;
+	damageTaken = 0;
+}
