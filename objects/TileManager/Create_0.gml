@@ -8,6 +8,7 @@ global.hex_step = [104, 11];
 global.border = [32+global.hex_step[0]*3, 32+global.hex_step[1]*14];
 global.board_size = [4,16];
 global.tiles = [];
+global.tilesInteractable = true;
 
 var h_shift = 1;
 
@@ -18,7 +19,7 @@ for(var i = 0; i < 16; i++) {
 		// var hex_y = -i*global.hex_step[1] + (global.hex_step[1]/2) + global.border[1];
 		
 		var coords = position_to_coords([j, i]);
-		var new_tile = instance_create_layer(coords[0], coords[1], "Instances", Obj_DirtTile);
+		var new_tile = instance_create_layer(coords[0], coords[1], "Tiles", Obj_DirtTile);
 		new_tile.position = [j, i];
 		new_tile.adj_tiles = find_adj_tiles(new_tile);
 		array_push(tile_col, new_tile);

@@ -1,4 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Highlights the tile when hovered over with the mouse
 
-image_alpha = 1;
+// Makes sure that tiles are interactable and there is no tower on this spot
+if (global.tilesInteractable && place_meeting(x, y, Obj_gTower1) = false) {
+	visible = true;
+}
