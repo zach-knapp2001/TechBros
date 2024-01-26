@@ -77,7 +77,6 @@
     {"id":{"name":"OPTIONS","path":"sprites/OPTIONS/OPTIONS.yy",},},
     {"id":{"name":"Obj_button_play","path":"objects/Obj_button_play/Obj_button_play.yy",},},
     {"id":{"name":"Spr_SpawnTile","path":"sprites/Spr_SpawnTile/Spr_SpawnTile.yy",},},
-    {"id":{"name":"tile_select","path":"objects/tile_select/tile_select.yy",},},
     {"id":{"name":"bugA_idle","path":"sprites/bugA_idle/bugA_idle.yy",},},
     {"id":{"name":"Obj_bugA","path":"objects/Obj_bugA/Obj_bugA.yy",},},
     {"id":{"name":"hard_block","path":"sprites/hard_block/hard_block.yy",},},

@@ -28,7 +28,6 @@
     {"name":"OPTIONS","order":7,"path":"sprites/OPTIONS/OPTIONS.yy",},
     {"name":"Obj_button_play","order":2,"path":"objects/Obj_button_play/Obj_button_play.yy",},
     {"name":"Spr_SpawnTile","order":1,"path":"sprites/Spr_SpawnTile/Spr_SpawnTile.yy",},
-    {"name":"tile_select","order":5,"path":"objects/tile_select/tile_select.yy",},
     {"name":"dirt_tileset","order":12,"path":"sprites/dirt_tileset/dirt_tileset.yy",},
   ],
 }
