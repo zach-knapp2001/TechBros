@@ -1,9 +1,9 @@
 {
   "FolderOrderSettings": [
-    {"name":"Enemies","order":5,"path":"folders/Objects/Enemies.yy",},
-    {"name":"GUI","order":8,"path":"folders/Objects/GUI.yy",},
-    {"name":"Title Screen","order":7,"path":"folders/Objects/GUI/Title Screen.yy",},
-    {"name":"Tiles","order":6,"path":"folders/Objects/Tiles.yy",},
+    {"name":"Enemies","order":1,"path":"folders/Objects/Enemies.yy",},
+    {"name":"GUI","order":3,"path":"folders/Objects/GUI.yy",},
+    {"name":"Title Screen","order":2,"path":"folders/Objects/GUI/Title Screen.yy",},
+    {"name":"Tiles","order":2,"path":"folders/Objects/Tiles.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"tile_back","order":13,"path":"sprites/tile_back/tile_back.yy",},
@@ -24,10 +24,10 @@
     {"name":"PLAY","order":8,"path":"sprites/PLAY/PLAY.yy",},
     {"name":"emptyPath","order":1,"path":"paths/emptyPath/emptyPath.yy",},
     {"name":"tile_top","order":10,"path":"sprites/tile_top/tile_top.yy",},
-    {"name":"Obj_gIcon1","order":5,"path":"objects/Obj_gIcon1/Obj_gIcon1.yy",},
-    {"name":"Obj_TileBack","order":6,"path":"objects/Obj_TileBack/Obj_TileBack.yy",},
+    {"name":"Obj_TileBack","order":1,"path":"objects/Obj_TileBack/Obj_TileBack.yy",},
     {"name":"OPTIONS","order":7,"path":"sprites/OPTIONS/OPTIONS.yy",},
     {"name":"Spr_SpawnTile","order":1,"path":"sprites/Spr_SpawnTile/Spr_SpawnTile.yy",},
+    {"name":"oPause","order":3,"path":"objects/oPause/oPause.yy",},
     {"name":"tile_select","order":5,"path":"objects/tile_select/tile_select.yy",},
     {"name":"objBtn_controls","order":4,"path":"objects/objBtn_controls/objBtn_controls.yy",},
     {"name":"TitleScreen","order":1,"path":"rooms/TitleScreen/TitleScreen.yy",},

@@ -9,7 +9,7 @@
     "children": [],
     "name": "Default",
   },
-  "defaultScriptType": 0,
+  "defaultScriptType": 1,
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Extensions","folderPath":"folders/Extensions.yy",},
@@ -76,6 +76,7 @@
     {"id":{"name":"Obj_TileBack","path":"objects/Obj_TileBack/Obj_TileBack.yy",},},
     {"id":{"name":"OPTIONS","path":"sprites/OPTIONS/OPTIONS.yy",},},
     {"id":{"name":"Spr_SpawnTile","path":"sprites/Spr_SpawnTile/Spr_SpawnTile.yy",},},
+    {"id":{"name":"oPause","path":"objects/oPause/oPause.yy",},},
     {"id":{"name":"tile_select","path":"objects/tile_select/tile_select.yy",},},
     {"id":{"name":"objBtn_controls","path":"objects/objBtn_controls/objBtn_controls.yy",},},
     {"id":{"name":"bugA_idle","path":"sprites/bugA_idle/bugA_idle.yy",},},
