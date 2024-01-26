@@ -5,7 +5,7 @@ event_inherited();
 
 maxSpeed = 2;
 
-damage = 10;
+damage = 34;
 toBeVisible = true;
 
 attackAnim = instance_create_layer(Obj_bugA.x, Obj_bugA.y, "Enemies", Obj_bug_attack);
