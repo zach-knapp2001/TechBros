@@ -27,6 +27,7 @@
     {"name":"tile_top","order":10,"path":"sprites/tile_top/tile_top.yy",},
     {"name":"Obj_TileBack","order":1,"path":"objects/Obj_TileBack/Obj_TileBack.yy",},
     {"name":"OPTIONS","order":7,"path":"sprites/OPTIONS/OPTIONS.yy",},
+    {"name":"Obj_EmptyTile","order":7,"path":"objects/Obj_EmptyTile/Obj_EmptyTile.yy",},
     {"name":"Spr_SpawnTile","order":1,"path":"sprites/Spr_SpawnTile/Spr_SpawnTile.yy",},
     {"name":"oPause","order":3,"path":"objects/oPause/oPause.yy",},
     {"name":"tile_select","order":5,"path":"objects/tile_select/tile_select.yy",},

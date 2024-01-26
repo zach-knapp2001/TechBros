@@ -3,7 +3,7 @@
 
 event_inherited();
 
-maxSpeed = 2;
+maxSpeed = 1;
 
 damage = 34;
 toBeVisible = true;
@@ -14,3 +14,5 @@ instance_destroy(attackAnim);
 
 attackingObj = instance_create_layer(-100, -100, "Enemies", Obj_SolidTile);
 //instance_destroy(attackingObj);
+
+alarm_set(2, 40);

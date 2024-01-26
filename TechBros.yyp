@@ -76,6 +76,7 @@
     {"id":{"name":"Obj_gIcon1","path":"objects/Obj_gIcon1/Obj_gIcon1.yy",},},
     {"id":{"name":"Obj_TileBack","path":"objects/Obj_TileBack/Obj_TileBack.yy",},},
     {"id":{"name":"OPTIONS","path":"sprites/OPTIONS/OPTIONS.yy",},},
+    {"id":{"name":"Obj_EmptyTile","path":"objects/Obj_EmptyTile/Obj_EmptyTile.yy",},},
     {"id":{"name":"Spr_SpawnTile","path":"sprites/Spr_SpawnTile/Spr_SpawnTile.yy",},},
     {"id":{"name":"oPause","path":"objects/oPause/oPause.yy",},},
     {"id":{"name":"tile_select","path":"objects/tile_select/tile_select.yy",},},

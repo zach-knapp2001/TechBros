@@ -4,5 +4,5 @@
 newSpawn = instance_create_layer(Obj_SpawnTile.x, Obj_SpawnTile.y, "Enemies", Obj_bugA);
 newSpawn.path = path;
 
-alarm_set(0, 90);
+alarm_set(0, 100);
 
