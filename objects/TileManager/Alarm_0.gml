@@ -22,5 +22,6 @@ enemySpawnTile.path = path;
 enemySpawnTile.startSpawning = true;
 //show_debug_message("Done pathing: " + string(path));
 
-
-alarm_set(0, 600);
+if (array_length(possibleEnemySpawns) > 0) {
+	alarm_set(0, 600);
+}
