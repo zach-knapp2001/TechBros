@@ -2,5 +2,5 @@
 // You can write your code in this editor
 
 event_inherited();
-maxHP = 9999999999
+maxHP = 9999999999;
 tileHP = maxHP;

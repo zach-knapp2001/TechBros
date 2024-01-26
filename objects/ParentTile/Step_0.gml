@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if(change_to != event_object) {
-	instance_change(change_to, false);
+	instance_change(change_to, recreate);
 	change_to = event_object;
 }
 
