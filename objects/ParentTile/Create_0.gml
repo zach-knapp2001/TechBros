@@ -3,6 +3,7 @@
 position = [0, 0];
 adj_tiles = [];
 change_to = event_object;
+recreate = false;
 beingAttacked = false;
 damageTaken = 0;
 

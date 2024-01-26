@@ -37,41 +37,94 @@ var goalTilePosition = rand_choice(possibleGoalTiles);
 // var goalTilePosition = possibleGoalTiles[choice];
 global.goalTile = global.tiles[goalTilePosition[1]][goalTilePosition[0]];
 global.goalTile.change_to = Obj_GoalTile;
-// goalTile.position = goalTilePosition;
-// goalTile.adj_tiles = find_adj_tiles(goalTile);
+global.goalTile.position = goalTilePosition;
+global.goalTile.adj_tiles = find_adj_tiles(global.goalTile);
+
+
+
+
+/// Random generation of hard tiles
+var possibleHardTiles = [];
+for (var i = 0; i < global.board_size[1] - 4; i = i+2) {
+	for (var j = 0; j < global.board_size[0] - 1; j++) {
+		array_push(possibleHardTiles, [j, i+3]);
+		array_push(possibleHardTiles, [j+1, i+2]);
+	}
+}
+
+
+//show_debug_message("Possible hard tiles before filtering: " + string(possibleHardTiles));
+//show_debug_message("Goal tile position: " + string(global.goalTile.position));
+//show_debug_message("index for goal tile: " + string(array_get_index(possibleHardTiles, global.goalTile.position)));
+
+for (i = 0; i < array_length(possibleHardTiles); i++) {
+	if (array_equals(possibleHardTiles[i], global.goalTile.position)) {
+		array_delete(possibleHardTiles, i, 1);
+	}
+}
+//array_delete(possibleHardTiles, array_get_index(possibleHardTiles, global.goalTile.position), 1);
+for (i = 0; i < 6; i++) {
+	for (j = 0; j < array_length(possibleHardTiles); j++) {
+		if (array_equals(possibleHardTiles[j], global.goalTile.adj_tiles[i])) {
+			array_delete(possibleHardTiles, j, 1);
+		}
+	}
+	// array_delete(possibleHardTiles, array_get_index(possibleHardTiles, global.goalTile.adj_tiles[i]), 1);
+}
+//show_debug_message("Possible hard tiles after filtering: " + string(possibleHardTiles));
+
+
+var hardTileList = [];
+for (i = 0; i < 12; i++) {
+	var hardTileChoice = rand_choice(possibleHardTiles);
+	array_push(hardTileList, hardTileChoice);
+	
+	var newHardTile = global.tiles[hardTileChoice[1]][hardTileChoice[0]];
+	newHardTile.tileHP = 9999999999;
+	newHardTile.change_to = Obj_SolidTile;
+	newHardTile.position = [hardTileChoice[0], hardTileChoice[1]];
+	newHardTile.adj_tiles = find_adj_tiles(newHardTile)	;
+	global.tiles[hardTileChoice[1]][hardTileChoice[0]] = newHardTile;
+	
+	array_delete(possibleHardTiles, array_get_index(possibleHardTiles, hardTileChoice), 1);
+}
+
 
 
 
 /// Spawn the first enemy spawn
 var possibleEnemySpawns = [];
-for(var i = 0; i < 16; i = i+2) {
+for(var i = 0; i < global.board_size[1]; i = i+2) {
 	array_push(possibleEnemySpawns, [0, i]);
-	array_push(possibleEnemySpawns, [3, 1+i]);
+	array_push(possibleEnemySpawns, [global.board_size[0] - 1, 1+i]);
 }
-for(var i = 0; i < 4; i++) {
+for(var i = 0; i < global.board_size[0]; i++) {
 	array_push(possibleEnemySpawns, [i, 0]);
 	array_push(possibleEnemySpawns, [i, 1]);
-	array_push(possibleEnemySpawns, [i, 14]);
-	array_push(possibleEnemySpawns, [i, 15]);
+	array_push(possibleEnemySpawns, [i, global.board_size[1] - 2]);
+	array_push(possibleEnemySpawns, [i, global.board_size[1] - 1]);
 }
 var firstEnemySpawn = rand_choice(possibleEnemySpawns);
-show_debug_message(firstEnemySpawn);
+//show_debug_message(firstEnemySpawn);
 global.enemySpawns = [firstEnemySpawn];
 var enemySpawnTile = global.tiles[global.enemySpawns[0][1]][global.enemySpawns[0][0]];
 enemySpawnTile.change_to = Obj_SpawnTile;
-//enemySpawnTile.position = firstEnemySpawn;
-//enemySpawnTile.adj_tiles = find_adj_tiles(enemySpawnTile);
+enemySpawnTile.position = firstEnemySpawn;
+enemySpawnTile.adj_tiles = find_adj_tiles(enemySpawnTile);
 var pathCourse = nextMove(firstEnemySpawn);
 enemySpawnTile.pathCourse = pathCourse;
-show_debug_message("Done pathing");
+show_debug_message("Done pathing, path course: " + string(pathCourse));
 var path = path_add();
 for (i = 0; i < array_length(pathCourse); i++) {
 	path_add_point(path, global.tiles[pathCourse[i][1]][pathCourse[i][0]].x, global.tiles[pathCourse[i][1]][pathCourse[i][0]].y, 100);
+	show_debug_message("Path point: " + string(global.tiles[pathCourse[i][1]][pathCourse[i][0]].x))
 }
-path_delete_point(path, path_get_length(path) - 1)
+//path_delete_point(path, path_get_length(path) - 1)
 enemySpawnTile.path = path;
-show_debug_message("Done pathing");
+show_debug_message("Done pathing: " + string(path));
 //global.tiles[global.enemySpawns[0][1]][global.enemySpawns[0][0]] = enemySpawnTile;
 
 
-global.pathLen = path_get_number(test_path);
+//global.pathLen = path_get_number(test_path);
+
+
