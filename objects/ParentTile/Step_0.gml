@@ -6,6 +6,8 @@ if(change_to != event_object) {
 	change_to = event_object;
 }
 
+
+
 if(tileHP <= 0){
 	instance_destroy();
 }

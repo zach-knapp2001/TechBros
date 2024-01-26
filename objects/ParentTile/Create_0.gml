@@ -7,7 +7,7 @@ recreate = false;
 beingAttacked = false;
 damageTaken = 0;
 
-maxHP = 1;
+maxHP = 10;
 tileHP = maxHP;
 
 pathCourse = [];
