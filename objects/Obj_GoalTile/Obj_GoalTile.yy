@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Spr_EndTile",
-    "path": "sprites/Spr_EndTile/Spr_EndTile.yy",
+    "name": "end_block",
+    "path": "sprites/end_block/end_block.yy",
   },
   "spriteMaskId": null,
   "visible": true,
