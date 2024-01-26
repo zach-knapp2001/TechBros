@@ -11,3 +11,4 @@ image_alpha = 0.6;
 relatedTile = pointer_null;
 towerCreator = pointer_null;
 backButton = pointer_null;
+
