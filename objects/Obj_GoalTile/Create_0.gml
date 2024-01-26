@@ -3,5 +3,3 @@
 
 event_inherited()
 tileHP = 1000;
-
-

@@ -4,6 +4,7 @@
   "name": "objBtn_play",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":68,"eventType":9,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
