@@ -36,8 +36,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Spr_SpawnTile",
-    "path": "sprites/Spr_SpawnTile/Spr_SpawnTile.yy",
+    "name": "start_block2",
+    "path": "sprites/start_block2/start_block2.yy",
   },
   "spriteMaskId": null,
   "visible": true,
