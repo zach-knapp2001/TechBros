@@ -7,6 +7,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"tile_back","order":13,"path":"sprites/tile_back/tile_back.yy",},
+    {"name":"dirt_tile_destroy","order":17,"path":"sprites/dirt_tile_destroy/dirt_tile_destroy.yy",},
     {"name":"Obj_SpawnTile","order":3,"path":"objects/Obj_SpawnTile/Obj_SpawnTile.yy",},
     {"name":"gTower1","order":6,"path":"sprites/gTower1/gTower1.yy",},
     {"name":"DirtTile","order":3,"path":"sprites/DirtTile/DirtTile.yy",},
@@ -16,6 +17,7 @@
     {"name":"ParentTile","order":1,"path":"objects/ParentTile/ParentTile.yy",},
     {"name":"gIcon1","order":5,"path":"sprites/gIcon1/gIcon1.yy",},
     {"name":"top","order":11,"path":"sprites/top/top.yy",},
+    {"name":"dirt_tile_damaged","order":16,"path":"sprites/dirt_tile_damaged/dirt_tile_damaged.yy",},
     {"name":"Obj_TileTop","order":6,"path":"objects/Obj_TileTop/Obj_TileTop.yy",},
     {"name":"EXIT","order":9,"path":"sprites/EXIT/EXIT.yy",},
     {"name":"objBtn_options","order":3,"path":"objects/objBtn_options/objBtn_options.yy",},
@@ -25,6 +27,7 @@
     {"name":"PLAY","order":8,"path":"sprites/PLAY/PLAY.yy",},
     {"name":"emptyPath","order":1,"path":"paths/emptyPath/emptyPath.yy",},
     {"name":"tile_top","order":10,"path":"sprites/tile_top/tile_top.yy",},
+    {"name":"Obj_dirtTileDestroy","order":7,"path":"objects/Obj_dirtTileDestroy/Obj_dirtTileDestroy.yy",},
     {"name":"Obj_TileBack","order":1,"path":"objects/Obj_TileBack/Obj_TileBack.yy",},
     {"name":"OPTIONS","order":7,"path":"sprites/OPTIONS/OPTIONS.yy",},
     {"name":"Obj_EmptyTile","order":7,"path":"objects/Obj_EmptyTile/Obj_EmptyTile.yy",},
