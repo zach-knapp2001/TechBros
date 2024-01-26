@@ -9,7 +9,7 @@ if(change_to != event_object) {
 
 
 if(tileHP <= 0){
-	instance_change(Obj_EmptyTile, recreate);
+	instance_change(Obj_EmptyTile, false);
 	tileHP = 1;
 }
 

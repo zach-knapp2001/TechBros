@@ -16,4 +16,6 @@ path = emptyPath;
 interactionTileTop = instance_create_layer(x, y, "TileTops", Obj_TileTop);
 interactionTileTop.relatedTile = id;
 
+tileTower = pointer_null;
+
 startSpawning = false;
