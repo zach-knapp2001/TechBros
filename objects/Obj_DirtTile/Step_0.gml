@@ -11,3 +11,9 @@ if (beingAttacked) {
 	beingAttacked = false;
 }
 */
+
+if (place_meeting(x, y - 22, ParentEnemy)) {
+	image_alpha = 0.7;
+} else {
+	image_alpha = 1;
+}

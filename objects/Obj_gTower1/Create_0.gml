@@ -3,3 +3,5 @@
 
 loopTime = 120;
 alarm[0] = loopTime;
+
+attackRange = 80;
