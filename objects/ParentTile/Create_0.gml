@@ -7,7 +7,7 @@ recreate = false;
 beingAttacked = false;
 damageTaken = 0;
 
-maxHP = 1;
+maxHP = 10;
 tileHP = maxHP;
 
 pathCourse = [];
@@ -15,3 +15,5 @@ path = emptyPath;
 
 interactionTileTop = instance_create_layer(x, y, "TileTops", Obj_TileTop);
 interactionTileTop.relatedTile = id;
+
+startSpawning = false;

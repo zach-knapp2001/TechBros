@@ -60,6 +60,13 @@ function rand_choice(positions) {
 	return positions[choice];
 }
 
+/// Chooses a random index of the array positions
+function rand_index(positions) {
+	var choice = irandom(array_length(positions) - 1)
+	return choice;
+}
+
+
 // hello!!!!!!!!
 // my second comment
 

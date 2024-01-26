@@ -92,8 +92,8 @@ for (i = 0; i < 12; i++) {
 
 
 
-/// Spawn the first enemy spawn
-var possibleEnemySpawns = [];
+/// Spawn the enemy spawn tiles
+possibleEnemySpawns = [];
 for(var i = 0; i < global.board_size[1]; i = i+2) {
 	array_push(possibleEnemySpawns, [0, i]);
 	array_push(possibleEnemySpawns, [global.board_size[0] - 1, 1+i]);
@@ -104,25 +104,30 @@ for(var i = 0; i < global.board_size[0]; i++) {
 	array_push(possibleEnemySpawns, [i, global.board_size[1] - 2]);
 	array_push(possibleEnemySpawns, [i, global.board_size[1] - 1]);
 }
-var firstEnemySpawn = rand_choice(possibleEnemySpawns);
-//show_debug_message(firstEnemySpawn);
-global.enemySpawns = [firstEnemySpawn];
-var enemySpawnTile = global.tiles[global.enemySpawns[0][1]][global.enemySpawns[0][0]];
-enemySpawnTile.change_to = Obj_SpawnTile;
-enemySpawnTile.position = firstEnemySpawn;
-enemySpawnTile.adj_tiles = find_adj_tiles(enemySpawnTile);
-var pathCourse = nextMove(firstEnemySpawn);
-enemySpawnTile.pathCourse = pathCourse;
-show_debug_message("Done pathing, path course: " + string(pathCourse));
-var path = path_add();
-for (i = 0; i < array_length(pathCourse); i++) {
-	path_add_point(path, global.tiles[pathCourse[i][1]][pathCourse[i][0]].x, global.tiles[pathCourse[i][1]][pathCourse[i][0]].y, 100);
-	show_debug_message("Path point: " + string(global.tiles[pathCourse[i][1]][pathCourse[i][0]].x))
-}
-//path_delete_point(path, path_get_length(path) - 1)
-enemySpawnTile.path = path;
-show_debug_message("Done pathing: " + string(path));
-//global.tiles[global.enemySpawns[0][1]][global.enemySpawns[0][0]] = enemySpawnTile;
+
+global.enemySpawns = [];
+
+alarm_set(0,1);
+
+//var firstEnemySpawn = rand_choice(possibleEnemySpawns);
+////show_debug_message(firstEnemySpawn);
+//global.enemySpawns = [firstEnemySpawn];
+//var enemySpawnTile = global.tiles[global.enemySpawns[0][1]][global.enemySpawns[0][0]];
+//enemySpawnTile.change_to = Obj_SpawnTile;
+//enemySpawnTile.position = firstEnemySpawn;
+//enemySpawnTile.adj_tiles = find_adj_tiles(enemySpawnTile);
+//var pathCourse = nextMove(firstEnemySpawn);
+//enemySpawnTile.pathCourse = pathCourse;
+//// show_debug_message("Done pathing, path course: " + string(pathCourse));
+//var path = path_add();
+//for (i = 0; i < array_length(pathCourse); i++) {
+//	path_add_point(path, global.tiles[pathCourse[i][1]][pathCourse[i][0]].x, global.tiles[pathCourse[i][1]][pathCourse[i][0]].y, 100);
+//	show_debug_message("Path point: " + string(global.tiles[pathCourse[i][1]][pathCourse[i][0]].x))
+//}
+////path_delete_point(path, path_get_length(path) - 1)
+//enemySpawnTile.path = path;
+////show_debug_message("Done pathing: " + string(path));
+////global.tiles[global.enemySpawns[0][1]][global.enemySpawns[0][0]] = enemySpawnTile;
 
 
 //global.pathLen = path_get_number(test_path);
