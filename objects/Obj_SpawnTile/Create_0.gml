@@ -12,4 +12,4 @@ event_inherited();
 //show_debug_message("Done pathing");
 maxSpeed = 1;
 
-alarm_set(0, 90);
+alarm_set(0, 60);

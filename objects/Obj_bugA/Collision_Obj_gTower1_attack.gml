@@ -6,7 +6,8 @@
 // Inherit the parent event
 event_inherited();
 
-HP = HP - 1;
+HP = HP - 5;
+instance_destroy(other);
 
 if (HP <= 0) {
 	audio_play_sound(Enemy_Death,3,false)
