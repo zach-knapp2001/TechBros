@@ -7,7 +7,8 @@ if(change_to != event_object) {
 }
 
 if(tileHP <= 0){
-	instance_destroy();
+	instance_change(Obj_EmptyTile, recreate);
+	tileHP = 1;
 }
 
 if (damageTaken != 0) {

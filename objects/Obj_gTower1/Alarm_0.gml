@@ -3,7 +3,7 @@
 
 if ((instance_exists(ParentEnemy)) && (distance_to_object(ParentEnemy) < attackRange)) {
 
-	var furthest_enemy = instance_nearest(Obj_GoalTile.x, Obj_GoalTile.y, ParentEnemy);
+	var furthest_enemy = instance_nearest(global.goalTile.x, global.goalTile.y, ParentEnemy);
 	var bullet = instance_create_layer(x, y - 56, "Instances", Obj_gTower1_attack);
 	
 	// aim and shoot at enemy closest to the end
