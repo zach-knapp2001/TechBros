@@ -8,11 +8,6 @@ if(change_to != event_object) {
 
 
 
-if(tileHP <= 0){
-	instance_change(Obj_EmptyTile, false);
-	tileHP = 1;
-}
-
 if (damageTaken != 0) {
 	tileHP-= damageTaken;
 	damageTaken = 0;
