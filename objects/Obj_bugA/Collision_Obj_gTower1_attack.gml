@@ -14,6 +14,6 @@ if (HP <= 0) {
 	
 	hudVar.enemies_killed++;
 	hudVar.hud_money++;
-	show_debug_message(hudVar.enemies_killed);
+	//show_debug_message(hudVar.enemies_killed);
 	instance_destroy();
 }
