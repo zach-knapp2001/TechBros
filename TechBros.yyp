@@ -54,6 +54,7 @@
     {"id":{"name":"Obj_SpawnTile","path":"objects/Obj_SpawnTile/Obj_SpawnTile.yy",},},
     {"id":{"name":"gTower1","path":"sprites/gTower1/gTower1.yy",},},
     {"id":{"name":"start_block","path":"sprites/start_block/start_block.yy",},},
+    {"id":{"name":"RUNDOWN","path":"sprites/RUNDOWN/RUNDOWN.yy",},},
     {"id":{"name":"ParentTower","path":"objects/ParentTower/ParentTower.yy",},},
     {"id":{"name":"gTower1_attack","path":"sprites/gTower1_attack/gTower1_attack.yy",},},
     {"id":{"name":"Sprite2423","path":"sprites/Sprite2423/Sprite2423.yy",},},

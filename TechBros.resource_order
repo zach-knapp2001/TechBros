@@ -18,6 +18,7 @@
     {"name":"Obj_SpawnTile","order":3,"path":"objects/Obj_SpawnTile/Obj_SpawnTile.yy",},
     {"name":"gTower1","order":11,"path":"sprites/gTower1/gTower1.yy",},
     {"name":"start_block","order":5,"path":"sprites/start_block/start_block.yy",},
+    {"name":"RUNDOWN","order":27,"path":"sprites/RUNDOWN/RUNDOWN.yy",},
     {"name":"gTower1_attack","order":3,"path":"sprites/gTower1_attack/gTower1_attack.yy",},
     {"name":"Sprite2423","order":22,"path":"sprites/Sprite2423/Sprite2423.yy",},
     {"name":"DirtTile","order":9,"path":"sprites/DirtTile/DirtTile.yy",},
