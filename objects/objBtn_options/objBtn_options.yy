@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "OPTIONS",
-    "path": "sprites/OPTIONS/OPTIONS.yy",
+    "name": "RUNDOWN",
+    "path": "sprites/RUNDOWN/RUNDOWN.yy",
   },
   "spriteMaskId": null,
   "visible": true,
