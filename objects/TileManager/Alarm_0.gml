@@ -15,7 +15,7 @@ enemySpawnTile.pathCourse = pathCourse;
 var path = path_add();
 for (i = 0; i < array_length(pathCourse); i++) {
 	path_add_point(path, global.tiles[pathCourse[i][1]][pathCourse[i][0]].x, global.tiles[pathCourse[i][1]][pathCourse[i][0]].y, 100);
-	show_debug_message("Path point: " + string(global.tiles[pathCourse[i][1]][pathCourse[i][0]].x))
+	//show_debug_message("Path point: " + string(global.tiles[pathCourse[i][1]][pathCourse[i][0]].x))
 }
 //path_delete_point(path, path_get_length(path) - 1)
 enemySpawnTile.path = path;

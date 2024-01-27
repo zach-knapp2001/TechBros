@@ -11,7 +11,7 @@ if(tileHP <= 50){
 }
 
 if(tileHP <= 0){
-	if (place_meeting(interactionTileTop.x, interactionTileTop.y-30, Obj_gTower1)) {
+	if (place_meeting(interactionTileTop.x, interactionTileTop.y-40, Obj_gTower1)) {
 		instance_destroy(tileTower);
 	}
 	tileHP = 1;
